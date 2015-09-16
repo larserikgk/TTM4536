@@ -1,5 +1,3 @@
-__author__ = 'root'
-
 def sum(a,b):
     int_a = convert_integer(a)
     int_b = convert_integer(b)

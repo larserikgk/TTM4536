@@ -1,3 +1,4 @@
+#!/usr/bin/python2.7
 import sys
 import socket
 import threading
@@ -25,7 +26,7 @@ def receive_from(connection):
 
 	# We set a 2 second time out depending on your
 	# target this may need to be adjusted
-	connection.settimeout(2)
+	connection.settimeout(10)
 
         try:
                 # keep reading into the buffer until there's no more data
@@ -176,3 +177,4 @@ def main():
     server_loop(local_host,local_port,remote_host,remote_port,receive_first)
         
 main()
+
